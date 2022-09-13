@@ -4,7 +4,8 @@ import {
   GuildMember,
   ApplicationCommandData,
   CommandInteractionOptionResolver,
-  ApplicationCommandOptionData
+  ApplicationCommandOptionData,
+  AutocompleteInteraction
 } from 'discord.js'
 import Client from '../Client'
 
@@ -18,7 +19,14 @@ interface RunOptions {
   args: CommandInteractionOptionResolver
 }
 
+interface AutoCompleteInteractionOptions {
+  client: Client
+  interaction: AutocompleteInteraction
+}
+
 type Run = (options: RunOptions) => any
+
+type AutoCompleteInteraction = (options: AutoCompleteInteractionOptions) => any
 
 export type Command = ApplicationCommandData & {
   name: string
@@ -26,4 +34,5 @@ export type Command = ApplicationCommandData & {
   testOnly: boolean
   options?: ApplicationCommandOptionData[]
   run: Run
+  autocompleteInteraction?: AutoCompleteInteraction
 } & ChatInputApplicationCommandData
