@@ -64,6 +64,8 @@ export const slash: Command = {
     const existGuild = await Guild.findById(interaction.guildId)
     const webhook = await channel.createWebhook('dex')
 
+    await interaction.deferReply()
+
     if (interaction.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
       if (!existGuild) {
         const guild = new Guild({
@@ -76,7 +78,7 @@ export const slash: Command = {
           lang: lang
         })
         await guild.save()
-        return await interaction.followUp(`RSS created successful`)
+        return interaction.followUp(`RSS created successful`)
       } else {
         await Guild.findByIdAndUpdate(
           interaction.guildId,
@@ -92,10 +94,11 @@ export const slash: Command = {
           },
           { new: true }
         )
-        return await interaction.followUp(`RSS successful update`)
+
+        return interaction.followUp(`RSS successful update`)
       }
     } else {
-      return await interaction.followUp(
+      return interaction.followUp(
         `You don't have permission to use this command`
       )
     }
