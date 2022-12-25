@@ -44,60 +44,60 @@ export const slash: Command = {
       type: Constants.ApplicationCommandOptionTypes.STRING,
       choices: [
         {
-            name: 'Chinese (Simplified)',
-            value: 'zh'
+          name: 'Chinese (Simplified)',
+          value: 'zh'
         },
         {
-            name: 'Chinese (Traditional)',
-            value: 'zh-hk'
+          name: 'Chinese (Traditional)',
+          value: 'zh-hk'
         },
         {
-            name: 'English',
-            value: 'en'
+          name: 'English',
+          value: 'en'
         },
         {
-            name: 'French',
-            value: 'fr'
+          name: 'French',
+          value: 'fr'
         },
         {
-            name: 'German',
-            value: 'de'
+          name: 'German',
+          value: 'de'
         },
         {
-            name: 'Indonesian',
-            value: 'id'
+          name: 'Indonesian',
+          value: 'id'
         },
         {
-            name: 'Italian',
-            value: 'it'
+          name: 'Italian',
+          value: 'it'
         },
         {
-            name: 'Japanese',
-            value: 'ja'
+          name: 'Japanese',
+          value: 'ja'
         },
         {
-            name: 'Korean',
-            value: 'ko'
+          name: 'Korean',
+          value: 'ko'
         },
         {
-            name: 'Portuguese (Brazil)',
-            value: 'pt-br'
+          name: 'Portuguese (Brazil)',
+          value: 'pt-br'
         },
         {
-            name: 'Portuguese (Portugal)',
-            value: 'pt'
+          name: 'Portuguese (Portugal)',
+          value: 'pt'
         },
         {
-            name: 'Russian',
-            value: 'ru'
+          name: 'Russian',
+          value: 'ru'
         },
         {
-            name: 'Spanish',
-            value: 'es'
+          name: 'Spanish',
+          value: 'es'
         },
         {
-            name: 'Spanish (LATAM)',
-            value: 'es-la'
+          name: 'Spanish (LATAM)',
+          value: 'es-la'
         }
       ]
     }
