@@ -44,12 +44,60 @@ export const slash: Command = {
       type: Constants.ApplicationCommandOptionTypes.STRING,
       choices: [
         {
-          name: 'Portuguese Brazil',
-          value: 'pt-br'
+            name: 'Chinese (Simplified)',
+            value: 'zh'
         },
         {
-          name: 'Portuguese',
-          value: 'pt'
+            name: 'Chinese (Traditional)',
+            value: 'zh-hk'
+        },
+        {
+            name: 'English',
+            value: 'en'
+        },
+        {
+            name: 'French',
+            value: 'fr'
+        },
+        {
+            name: 'German',
+            value: 'de'
+        },
+        {
+            name: 'Indonesian',
+            value: 'id'
+        },
+        {
+            name: 'Italian',
+            value: 'it'
+        },
+        {
+            name: 'Japanese',
+            value: 'ja'
+        },
+        {
+            name: 'Korean',
+            value: 'ko'
+        },
+        {
+            name: 'Portuguese (Brazil)',
+            value: 'pt-br'
+        },
+        {
+            name: 'Portuguese (Portugal)',
+            value: 'pt'
+        },
+        {
+            name: 'Russian',
+            value: 'ru'
+        },
+        {
+            name: 'Spanish',
+            value: 'es'
+        },
+        {
+            name: 'Spanish (LATAM)',
+            value: 'es-la'
         }
       ]
     }
